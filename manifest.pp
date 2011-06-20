@@ -17,6 +17,10 @@ package { 'jenkins':
     require => Exec["apt-update"]
 }
 
+package { 'nginx':
+    ensure => installed,
+}
+
 file {
     '/etc/nginx/sites-enabled/nginx.jenkins.conf':
         ensure => link,
