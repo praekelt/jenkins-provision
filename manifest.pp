@@ -27,3 +27,9 @@ file {
         target => '/var/praekelt/jenkins/nginx.jenkins.conf';
 }
 
+file {
+    '/usr/bin/jenkins_deploy_qa.sh':
+        ensure => link,
+        target => '/var/praekelt/jenkins/jenkins_deploy_qa.sh';
+}
+
