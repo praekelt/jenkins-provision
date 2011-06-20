@@ -28,8 +28,8 @@ file {
 }
 
 file {
-    '/usr/bin/jenkins_deploy_qa.sh':
+    '/usr/bin/jenkins_deploy_qa':
         ensure => link,
-        target => '/var/praekelt/jenkins/jenkins_deploy_qa.sh';
+        target => '/var/praekelt/jenkins/jenkins_deploy_qa';
 }
 
